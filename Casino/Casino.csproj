@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Casino.Applications.Shared\Casino.Applications.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\images\casino\" />
+  </ItemGroup>
+
 </Project>

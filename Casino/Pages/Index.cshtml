@@ -3,8 +3,27 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+<link href="~/assets/stylesheets/style.css" rel="stylesheet" />
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@Html.Raw(Model.innerHtml)
+
+
+<script>
+    function OpenCasinoGame(slotId){
+        var win_open = window.open('https://newus.nasa79.com/game/casino/open/' + slotId + '?api_token=lwMrMHBQcxU0kqTEmsquU6HcXtS0E5jw65LDjvSDimk7iDG4EsHixH0ApJFQ', "game", 'width=1366,height=768,scrollbars=yes');
+        /*axios.get('/api/slot/open/'+slotId,{params:{api_token:'lwMrMHBQcxU0kqTEmsquU6HcXtS0E5jw65LDjvSDimk7iDG4EsHixH0ApJFQ'}}).then(res=>{
+            let data = res.data;
+            if(data.returnCode=='0'){
+                win_open.location.href=data.gameUrl;
+            } else{
+                alert(data.message);
+            }
+            
+        }).catch(e=>{
+            console.log(e);
+        });*/
+    }
+</script>         
