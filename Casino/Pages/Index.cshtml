@@ -18,8 +18,8 @@
 
 
 <script>
-    function OpenCasinoGame(slotId){
-        var win_open = window.open('https://newus.nasa79.com/game/casino/open/' + slotId + '?api_token=lwMrMHBQcxU0kqTEmsquU6HcXtS0E5jw65LDjvSDimk7iDG4EsHixH0ApJFQ', "game", 'width=1366,height=768,scrollbars=yes');
+    function OpenCasinoGame(slotId) {
+        var win_open = window.open('/Game/Open?slotid=' + slotId, "game", 'width=1366,height=768,scrollbars=yes');
         /*axios.get('/api/slot/open/'+slotId,{params:{api_token:'lwMrMHBQcxU0kqTEmsquU6HcXtS0E5jw65LDjvSDimk7iDG4EsHixH0ApJFQ'}}).then(res=>{
             let data = res.data;
             if(data.returnCode=='0'){
@@ -27,9 +27,9 @@
             } else{
                 alert(data.message);
             }
-            
+
         }).catch(e=>{
             console.log(e);
         });*/
     }
-</script>         
+</script>
