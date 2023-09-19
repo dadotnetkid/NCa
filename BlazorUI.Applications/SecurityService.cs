@@ -45,6 +45,7 @@ public class SecurityService
                 foreach (var c in result.Cookies.ToList())
                 {
                     identity.Add(new Claim(c.Name, c.Value));
+                    _httpContext.Response.Cookies.Append(c.Name,c.Value);
                 }
 
                 claims.AddIdentity(new ClaimsIdentity(identity, CookieAuthenticationDefaults.AuthenticationScheme));
