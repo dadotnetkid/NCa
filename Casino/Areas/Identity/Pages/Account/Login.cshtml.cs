@@ -101,15 +101,8 @@ namespace Casino.Areas.Identity.Pages.Account
             returnUrl ??= Url.Content("~/");
 
             await _securityService.Login(Input.UserName, Input.Password);
-            if (ModelState.IsValid)
-            {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+            return Redirect(returnUrl);
 
-            }
-
-            // If we got this far, something failed, redisplay form
-            return Page();
         }
     }
 }

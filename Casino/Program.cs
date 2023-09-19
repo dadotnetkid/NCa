@@ -26,6 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
         options.Cookie.SameSite = SameSiteMode.None;
         options.LoginPath = "/Identity/Account/Login";
+        options.LogoutPath = "/Account/Logout";
     });
 
 builder.Services.AddScoped<SecurityService>();
