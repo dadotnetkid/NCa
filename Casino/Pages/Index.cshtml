@@ -10,11 +10,12 @@
 <link href="~/assets/stylesheets/owl.carousel.min.css" rel="stylesheet" />
 <link href="~/assets/stylesheets/style.css" rel="stylesheet" />
 <link href="~/assets/stylesheets/svg-external.css" rel="stylesheet" />
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+    <div class="col-md-12 d-inline-flex mt-4 mb-4">
+        @Html.Raw(Model.innerHtml)
+    </div>
 </div>
-@Html.Raw(Model.innerHtml)
+
 
 
 <script>

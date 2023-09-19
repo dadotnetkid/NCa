@@ -26,7 +26,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
         options.Cookie.SameSite = SameSiteMode.None;
         options.LoginPath = "/Identity/Account/Login";
-        options.LogoutPath = "/Discord/Signout";
     });
 
 builder.Services.AddScoped<SecurityService>();
