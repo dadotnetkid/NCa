@@ -16,3 +16,30 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.col-md-12.d-inline-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.main-img {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+img.on {
+  display: none;
+}
+.text-cont {
+  display: none;
+}
+img.circle-img {
+  display: none;
+}
+
+.col-md-12.d-inline-flex.mt-4.mb-4 {
+  margin-top: 38px !important;
+  margin-bottom: 38px !important;
+  text-align: center;
+}
