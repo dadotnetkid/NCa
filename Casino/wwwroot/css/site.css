@@ -43,3 +43,70 @@ img.circle-img {
   margin-bottom: 38px !important;
   text-align: center;
 }
+
+body {
+  background: url(/images/pexels-raka-miftah-4253692.jpg);
+  width: 100%;
+  background-size: cover;
+}
+a.nav-link.text-dark {
+  color: white !important;
+}
+a.navbar-brand {
+  color: white !important;
+}
+h2 {
+  font-size: 17px;
+  color: white;
+}
+h1 {
+  display: none;
+}
+.border-bottom {
+  background: black !important;
+
+}
+.form-floating input {
+  margin-bottom: 10px;
+}
+.col-md-4 {
+  background: #00000075;
+  border-radius: 7px;
+  padding: 42px;
+  margin: 70px;
+}
+section div p {
+  margin-bottom: 2px;
+}
+section div p a{
+  color: white;
+  text-decoration: unset;
+}
+label.form-label {
+  color: white;
+}
+footer.border-top.footer.text-muted {
+  background: black;
+  color: white;
+}
+footer.border-top.footer.text-muted a {
+  color: white;
+  text-decoration: unset;
+}
+button#login-submit {
+  background: #871616;
+  border: #871616;
+}
+nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.bg-white.border-bottom.box-shadow{
+  background: black !important;
+}
+.carousel {
+  height: 400px; /* Set the desired height */
+  overflow: hidden; /* Ensure the images do not overflow */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensure the images cover the whole slide */
+  height: 100%; /* Make sure the image fills the slide */
+  width: 100%; /* Make sure the image fills the slide */
+}
