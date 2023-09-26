@@ -110,3 +110,28 @@ nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.bg-white.border-bo
   height: 100%; /* Make sure the image fills the slide */
   width: 100%; /* Make sure the image fills the slide */
 }
+p.name {
+  color: white;
+  text-align: center;
+}
+.main-img img {
+  padding: 4px;
+  background: #930404;
+  border-radius: 6px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-img img:hover {
+  animation: pulse 2s infinite;
+}
