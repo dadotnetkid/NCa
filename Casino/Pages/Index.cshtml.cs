@@ -21,19 +21,6 @@ namespace Casino.Pages
         public async Task OnGetAsync()
         {
 
-            var client = new RestClient("https://newus.nasa79.com");
-            var request = new RestRequest("/", Method.Get);
-            var cookieValue = _httpContext.User.Claims.FirstOrDefault(c => c.Type == "dragon_session").Value.ToString();
-            request.AddHeader("Cookie", $"dragon_session={cookieValue}");
-
-            var result = await client.ExecuteAsync(request);
-
-            var doc = new HtmlDocument();
-            doc.LoadHtml(result.Content);
-            //cs-casino-slot casino action
-            innerHtml     = doc.DocumentNode
-                     .Descendants(0).FirstOrDefault(n => n.HasClass("cs-casino-slot")).InnerHtml;
-
         }
 
         public string innerHtml { get; set; }
